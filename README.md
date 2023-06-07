@@ -37,7 +37,12 @@ End the program.
 
 ## PROGRAM:
 ```
-fname=input("enter the file name:") num_words=0 with open(fname,'r') as f: for line in f: words=line.split() num_words+=len(words) print('Number of words:',num_words)
+num_words = 0
+with open ('myfile.txt','r') as file1:
+    for i in file1:
+        word = i.split()
+        num_words +=len(word)
+print("Number of words ={}".format(num_words))
 ```
 ### OUTPUT:
 ![Screenshot 2023-05-19 105053](https://github.com/premkumarkarthikeyan/Word-count/assets/119476243/c04d677b-89a2-4cba-af20-36900d39e8ee)
